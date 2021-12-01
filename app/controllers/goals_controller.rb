@@ -2,14 +2,21 @@ class GoalsController < ApplicationController
 
     def index
         goals = Goal.all
+        render json: goal
     end
 
     def create
-        goal = Goal.new
+        goal = Goal.create(goal_params)
+
+        if goal.save
+            render json: goal
+        else 
+            render json: {error: "Could not save"}
     end
 
     def show
         goal = Goal.find(params[:id])
+        render json: goal
     end
 
     private
