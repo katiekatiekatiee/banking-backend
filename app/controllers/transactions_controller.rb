@@ -10,10 +10,16 @@ class TransactionsController < ApplicationController
     end
 
     def show
+        transaction = Transaction.find(params[:id])
     end
 
     def destroy
     end
 
+    private
+
+    def transaction_params
+        params.require(:transaction).permit(:date, :amount, :goal_id)
+    end
 
 end
