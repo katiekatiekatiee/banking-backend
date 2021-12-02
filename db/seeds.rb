@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Goal.create(name: "Shopping")
+Goal.create(name: "Vacation")
+Goal.create(name: "Holiday Gifts")
+Goal.create(name: "Personal")
+Goal.create(name: "General Savings")
+Goal.create(name: "Vehicle")
+Goal.create(name: "Home")
+Goal.create(name: "Retirement")
+Goal.create(name: "School")
+Goal.create(name: "Concerts")

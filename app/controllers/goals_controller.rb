@@ -2,7 +2,7 @@ class GoalsController < ApplicationController
 
     def index
         goals = Goal.all
-        render json: goal
+        render json: goals
     end
 
     def create
@@ -12,6 +12,7 @@ class GoalsController < ApplicationController
             render json: goal
         else 
             render json: {error: "Could not save"}
+        end
     end
 
     def show
