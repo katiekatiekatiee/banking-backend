@@ -5,15 +5,15 @@ class GoalsController < ApplicationController
         render json: goals
     end
 
-    def create
-        goal = Goal.create(goal_params)
+    # def create
+    #     goal = Goal.create(goal_params)
 
-        if goal.save
-            render json: goal
-        else 
-            render json: {error: "Could not save"}
-        end
-    end
+    #     if goal.save
+    #         render json: goal
+    #     else 
+    #         render json: {error: "Could not save"}
+    #     end
+    # end
 
     def show
         goal = Goal.find(params[:id])
