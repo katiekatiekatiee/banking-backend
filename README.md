@@ -1,24 +1,27 @@
-# README
+# Savings Tracker and Calculator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Savings Tracker. Here, a user may add transactions (uncluding deductions) to a running list, appropriately named "transaction history." Each transaction is associated with a goal, or reason for saving the funds. Additionally, the total amount of funds based on the sum of all transactions is displayed and updated as the user files transactions.
 
-Things you may want to cover:
+## Installation
+Fork and clone this repository in your terminal. Navigate into the file in the terminal and open it.
 
-* Ruby version
+Then, execute the following in the terminal:
+$ bundle install
 
-* System dependencies
+Lastly, start up a server using the following command:
+$ rails s
 
-* Configuration
+## Usage
+This is a custom API associated with the following React frontend application: https://github.com/katiekatiekatiee/banking-frontend
 
-* Database creation
+## Development
+After checking out the repo, run `bundle install` to install dependencies.
 
-* Database initialization
+## Contributing
 
-* How to run the test suite
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/banking-backend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/banking-backend/blob/master/CODE_OF_CONDUCT.md).
 
-* Services (job queues, cache servers, search engines, etc.)
+## Code of Conduct
 
-* Deployment instructions
+Everyone interacting in the banking-backend's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/banking-backend/blob/master/CODE_OF_CONDUCT.md).
 
-* ...
