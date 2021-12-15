@@ -15,10 +15,10 @@ class TransactionsController < ApplicationController
         end
     end
 
-    # def show
-    #     transaction = Transaction.find(params[:id])
-    #     render json: transaction.to_json(except: [:created_at, :updated_at])
-    # end
+    def show
+        transaction = Transaction.find(params[:id])
+        render json: transaction.to_json(except: [:created_at, :updated_at])
+    end
 
     def destroy
         transaction = Transaction.find(params[:id])
