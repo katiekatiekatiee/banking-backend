@@ -27,7 +27,7 @@ class TransactionsController < ApplicationController
     end
 
     def search
-        transactions = Transaction.where
+        transactions = Transaction.where("date LIKE ?", params[:q])
         render json: transactions
     end
 
