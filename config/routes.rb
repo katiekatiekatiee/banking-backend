@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get '/search', to: 'transactions#search'
+  post '/search', to: 'transactions#search'
 
   resources :goals
   resources :transactions
