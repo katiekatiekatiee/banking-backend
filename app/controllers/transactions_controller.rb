@@ -26,6 +26,11 @@ class TransactionsController < ApplicationController
         render json: {message: "Transaction has been removed."}
     end
 
+    def search
+        transactions = Transaction.where
+        render json: transactions
+    end
+
     private
 
     def transaction_params
